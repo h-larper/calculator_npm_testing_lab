@@ -68,8 +68,10 @@ describe('multiply', () => {
     actual = multiply(-8, -10);
     expect(actual).toBe(expected);
   });
-  test.skip('can multiply by 0', () => {
-
+  test('can multiply by 0', () => {
+    expected = 0;
+    actual = multiply(300000, 0);
+    expect(actual).toBe(expected);
   });
 });
 
