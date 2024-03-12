@@ -37,7 +37,20 @@ describe('sum', () => {
 
 });
 
+describe('subtract', () => {
+  test('can subtract two positive numbers', () => {
+    expected = 15;
+    actual = subtract(20, 5);
+    expect(actual).toBe(expected);
+  });
+  test('can subtract two large numbers', () => {
+    expected = 1150;
+    actual = subtract(1300, 150);
+    expect(actual).toBe(expected);
+  });
+  test.skip('can subtract two negaive numbers', () => {
 
+  });
 
 });
 
