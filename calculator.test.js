@@ -115,7 +115,7 @@ describe('even', () => {
     actual = even(1000);
     expect(actual).toBe(expected);
   });
-  test.skip('can confirm an odd number isnt even', () => {
+  test('can confirm an odd number isnt even', () => {
     expected = false;
     actual = even(99);
     expect(actual).toBe(expected);
