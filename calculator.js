@@ -19,11 +19,13 @@ const modulus = function(a, b) {
 };
 
 const even = function(a){
-    return a % 2 == 0;
+    // return a % 2 == 0;
+    return modulus(a, 2) == 0;              // refactor to uphold DRY
 };
 
 const odd = function(a){
-    return a % 2 == 1;
+    //return a % 2 == 1;
+    return modulus(a, 2) == 1;              // refactor to uphold DRY
 };
 
 module.exports = { 
