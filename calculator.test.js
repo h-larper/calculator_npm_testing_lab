@@ -82,8 +82,10 @@ describe('divide', () => {
     actual = divide(64, 8);
     expect(actual).toBe(expected);
   });
-  test.skip('can divide by a negative number', () => {
-
+  test('can divide by a negative number', () => {
+    expected = -5;
+    actual = divide(10, -2);
+    expect(actual).toBe(expected);
   });
   test.skip('can divide by 0', () => {
 
