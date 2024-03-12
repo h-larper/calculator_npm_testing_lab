@@ -77,7 +77,17 @@ describe('multiply', () => {
 
 
 describe('divide', () => {
+  test('can divide 2 positive numbers', () => {
+    expected = 8;
+    actual = divide(64, 8);
+    expect(actual).toBe(expected);
+  });
+  test.skip('can divide by a negative number', () => {
 
+  });
+  test.skip('can divide by 0', () => {
+
+  });
 });
 
 
