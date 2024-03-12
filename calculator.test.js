@@ -129,5 +129,9 @@ describe('even', () => {
 
 
 describe('odd', () => {
-
+  test('can confirm a number is odd', () => {
+    expected = true;
+    actual = odd(31);
+    expect(actual).toBe(expected);
+  });
 });
