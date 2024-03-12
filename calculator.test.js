@@ -101,8 +101,10 @@ describe('modulus', () => {
     actual = modulus(11, 3);
     expect(actual).toBe(expected);
   });
-  test.skip('can get remainder when using a negative number', () => {
-
+  test('can get remainder when using a negative number', () => {
+    expected = -2;
+    actual = modulus(-11, 3);
+    expect(actual).toBe(expected);
   });
 });
 
