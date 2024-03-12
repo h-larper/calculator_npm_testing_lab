@@ -139,4 +139,9 @@ describe('odd', () => {
     actual = odd(66);
     expect(actual).toBe(expected);
   });
+  test('can confirm 0 isnt odd', () => {
+    expected = false;
+    actual = odd(0);
+    expect(actual).toBe(expected);
+  });
 });
