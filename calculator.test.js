@@ -87,8 +87,10 @@ describe('divide', () => {
     actual = divide(10, -2);
     expect(actual).toBe(expected);
   });
-  test.skip('can divide by 0', () => {
-
+  test('can divide by a large number', () => {
+    expected = 0.005606952621250351;
+    actual = divide(20, 3567);
+    expect(actual).toBe(expected);
   });
 });
 
