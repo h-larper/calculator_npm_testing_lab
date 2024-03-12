@@ -8,6 +8,7 @@ const {
   odd,
 } = require("./calculator");
 
+
 describe('sum', () => { 
   
   test('can add two small positive numbers', () => {
@@ -34,8 +35,8 @@ describe('sum', () => {
     actual = sum(10, 0);
     expect(actual).toBe(expected);
   });
-
 });
+
 
 describe('subtract', () => {
   test('can subtract two positive numbers', () => {
@@ -53,24 +54,38 @@ describe('subtract', () => {
     actual = subtract(-10, -12);
     expect(actual).toBe(expected);
   });
-
 });
+
 
 describe('multiply', () => {
+  test('can multiply two positive numbers', () => {
+    expected = 49;
+    actual = multiply(7, 7);
+    expect(actual).toBe(expected);
+  });
+  test.skip('can multiple two negative numbers', () => {
 
+  });
+  test.skip('can multiply by 0', () => {
+
+  });
 });
+
 
 describe('divide', () => {
 
 });
 
+
 describe('modulus', () => {
 
 });
 
+
 describe('even', () => {
 
 });
+
 
 describe('odd', () => {
 
