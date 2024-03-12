@@ -63,8 +63,10 @@ describe('multiply', () => {
     actual = multiply(7, 7);
     expect(actual).toBe(expected);
   });
-  test.skip('can multiple two negative numbers', () => {
-
+  test('can multiple two negative numbers', () => {
+    expected = 80;
+    actual = multiply(-8, -10);
+    expect(actual).toBe(expected);
   });
   test.skip('can multiply by 0', () => {
 
