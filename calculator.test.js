@@ -96,7 +96,14 @@ describe('divide', () => {
 
 
 describe('modulus', () => {
+  test('can get remainder of 2 positive numbers', () => {
+    expected = 2;
+    actual = modulus(11, 3);
+    expect(actual).toBe(expected);
+  });
+  test.skip('can get remainder when using a negative number', () => {
 
+  });
 });
 
 
