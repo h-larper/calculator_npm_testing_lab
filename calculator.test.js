@@ -48,8 +48,10 @@ describe('subtract', () => {
     actual = subtract(1300, 150);
     expect(actual).toBe(expected);
   });
-  test.skip('can subtract two negaive numbers', () => {
-
+  test('can subtract two negative numbers', () => {
+    expected = 2;
+    actual = subtract(-10, -12);
+    expect(actual).toBe(expected);
   });
 
 });
