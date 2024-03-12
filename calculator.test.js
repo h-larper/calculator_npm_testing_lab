@@ -134,4 +134,9 @@ describe('odd', () => {
     actual = odd(31);
     expect(actual).toBe(expected);
   });
+  test('can confirm a number is not odd', () => {
+    expected = false;
+    actual = odd(66);
+    expect(actual).toBe(expected);
+  });
 });
