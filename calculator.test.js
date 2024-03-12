@@ -110,7 +110,16 @@ describe('modulus', () => {
 
 
 describe('even', () => {
-
+  test('can check if a large number is even', () => {
+    expected = true;
+    actual = even(1000);
+    expect(actual).toBe(expected);
+  });
+  test.skip('can confirm an odd number isnt even', () => {
+    expected = false;
+    actual = even(99);
+    expect(actual).toBe(expected);
+  });
 });
 
 
