@@ -120,6 +120,11 @@ describe('even', () => {
     actual = even(99);
     expect(actual).toBe(expected);
   });
+  test('can confirm a decimal isnt even', () => {
+    expected = false;
+    actual = even(5.25);
+    expect(actual).toBe(expected);
+  });
 });
 
 
